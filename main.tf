@@ -3,4 +3,7 @@ terraform {
 }
 
 resource "null_resource" "example" {
+  triggers = {
+    project = "Project11"
+  }
 }
